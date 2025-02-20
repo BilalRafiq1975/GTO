@@ -10,12 +10,12 @@ namespace ManagementSystem
             Console.WriteLine("Welcome to the Employee Management System");
 
             // C# Variables
-            string companyName = "TechCorp";
+            string companyName = "DPL";
             int totalEmployees = 100;
             double revenue = 500000.75;
 
             // Constants
-            const string CEO = "John Doe";
+            const string CEO = "Syed Ahmed";
 
             // Display Variables
             Console.WriteLine("Company: " + companyName + ", Employees: " + totalEmployees + ", Revenue: " + revenue);
