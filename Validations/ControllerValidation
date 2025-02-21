@@ -1,0 +1,83 @@
+using Microsoft.AspNetCore.Mvc;
+using basicApiProject.Models;
+
+
+namespace basicApiProject.Controllers
+{
+    [Route("api/controller")]
+    [ApiController]
+    public class UserController : ControllerBase
+    {
+        private static List<User> users = new()
+        {
+            new User { Id = 1, Name = "Bilal", Email = "bilal.q@dplit.com" }
+        };
+
+        [HttpGet]
+        public ActionResult<List<User>> GetUsers() => Ok(users);
+
+        [HttpGet("{id}")]
+        public ActionResult<User> GetUser(int id) =>
+            users.FirstOrDefault(u => u.Id == id) is User user ? Ok(user) : NotFound();
+
+        [HttpPost]
+        public ActionResult<User> AddUser(User user)
+        {
+            if (!ModelState.IsValid){
+                return BadRequest(ModelState);
+            }
+
+            //custom validation
+            if (users.Any(u=> u.Email == user.Email))
+            {
+                return BadRequest("Already exists");
+            }
+
+            // Custom Validation: Allow only company emails
+    if (!user.Email.EndsWith("@dplit.com"))
+    {
+        return BadRequest("Only company emails (@dplit.com) are allowed.");
+    }
+            users.Add(user);
+            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateUser(int id, User updatedUser)
+        {
+            if (!ModelState.IsValid){
+                return BadRequest(ModelState);
+            }
+            var user = users.FirstOrDefault(u => u.Id == id);
+            if (user == null) return NotFound();
+            // Custom Validation: Ensure Name is not empty
+    if (string.IsNullOrWhiteSpace(updatedUser.Name))
+    {
+        return BadRequest("Name cannot be empty.");
+    }
+
+    // Custom Validation: Prevent email change to an existing one
+    if (users.Any(u => u.Email == updatedUser.Email && u.Id != id))
+    {
+        return BadRequest("This email is already in use by another user.");
+    }
+            user.Name = updatedUser.Name;
+            user.Email = updatedUser.Email;
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteUser(int id)
+        {
+            var user = users.FirstOrDefault(u => u.Id == id);
+            if (user == null) return NotFound();
+            // Custom Validation: Prevent deletion of admin user (Id 1)
+    if (id == 1)
+    {
+        return BadRequest("Cannot delete the default admin user.");
+    }
+            users.Remove(user);
+            return NoContent();
+        }
+    }
+}
