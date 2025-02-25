@@ -1,50 +1,72 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MyApp
 {
-    // Full User class (what we store)
     public class User
     {
-        public int Id { get; set; }
         public string Name { get; set; }
+        public int Id { get; set; }
         public int Age { get; set; }
-        public string Password { get; set; } // Private stuff
+        public string Password { get; set; }
     }
 
-    // DTO (what we send)
     public class UserDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
+        public int Id { get; set; }
         public int Age { get; set; }
     }
 
-    // API Controller
     [ApiController]
     [Route("api/users")]
-    public class UsersController : ControllerBase
+    public class UserController : ControllerBase
     {
-        // Fake user data
-        private readonly List<User> _users = new List<User>
+        private readonly List<User> _users;
+
+        public UserController()
         {
-            new User { Id = 1, Name = "Bob", Age = 30, Password = "secret" }
-        };
+            _users = new List<User>
+            {
+                new User { Id = 1, Name = "Bilal", Age = 30, Password = "abc" }
+            };
+        }
 
         [HttpGet("{id}")]
-        public ActionResult GetUser(int id)
+        public ActionResult<UserDto> GetUser(int id)
         {
             var user = _users.FirstOrDefault(u => u.Id == id);
             if (user == null) return NotFound();
 
-            // Move data to DTO
             var userDto = new UserDto
             {
                 Id = user.Id,
                 Name = user.Name,
                 Age = user.Age
             };
+            return Ok(userDto);
+        }
+    }
 
-            return Ok(userDto); // Send DTO, not the full User
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddControllers(); // Add controllers to DI container
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline
+            app.UseHttpsRedirection();
+            app.UseAuthorization();
+            app.MapControllers();
+
+            app.Run();
         }
     }
 }
