@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i> Task Manager</h1>
+        </header>
+
+        <!-- Auth Section -->
+        <div id="auth-section">
+            <!-- Signup Card -->
+            <div class="card" id="signup-card">
+                <h2><i class="fas fa-user-plus"></i> Sign Up</h2>
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button onclick="signup()" id="signup-btn"><i class="fas fa-arrow-right"></i> Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+            </div>
+
+            <!-- Login Card -->
+            <div class="card" id="login-card" style="display: none;">
+                <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button onclick="login()" id="login-btn"><i class="fas fa-arrow-right"></i> Login</button>
+                <p>New user? <a href="#" onclick="showSignup()">Sign up here</a></p>
+            </div>
+        </div>
+
+        <!-- Task Section -->
+        <div id="task-section" class="card" style="display: none;">
+            <h2><i class="fas fa-tasks"></i> Your Tasks</h2>
+            <div class="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <input type="text" id="task-desc" placeholder="Description (optional)">
+                <input type="date" id="task-due" required>
+                <button onclick="addTask()" id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+            </div>
+            <div class="task-list">
+                <h3>Task List</h3>
+                <ul id="task-list"></ul>
+            </div>
+            <button onclick="logout()" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+
+        <!-- Message Area -->
+        <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
