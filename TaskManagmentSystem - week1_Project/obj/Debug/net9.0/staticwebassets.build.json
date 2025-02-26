@@ -1,0 +1,1042 @@
+{
+  "Version": 1,
+  "Hash": "HM3ZYlYDaEawQ8dkk18n611yKytUJGolALYNkJmPkWI=",
+  "Source": "TaskManagmentSystem",
+  "BasePath": "_content/TaskManagmentSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TaskManagmentSystem\\wwwroot",
+      "Source": "TaskManagmentSystem",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\juvlydb7r7-l1696co1lu.gz",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "styles#[.{fingerprint=l1696co1lu}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "oldzihsnwy",
+      "Integrity": "nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\ulbm49jsu7-agygo3h3lz.gz",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "index#[.{fingerprint=agygo3h3lz}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ep6w1wnw5n",
+      "Integrity": "8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\w7wzdy3gl7-lfidwjtckr.gz",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "script#[.{fingerprint=lfidwjtckr}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\script.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "j98q0mkf43",
+      "Integrity": "qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\index.html",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "agygo3h3lz",
+      "Integrity": "auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\script.js",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "script#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lfidwjtckr",
+      "Integrity": "kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\styles.css",
+      "SourceId": "TaskManagmentSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\",
+      "BasePath": "_content/TaskManagmentSystem",
+      "RelativePath": "styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l1696co1lu",
+      "Integrity": "J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.agygo3h3lz.html",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\ulbm49jsu7-agygo3h3lz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001187648456"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agygo3h3lz"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os="
+        }
+      ]
+    },
+    {
+      "Route": "index.agygo3h3lz.html",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agygo3h3lz"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os="
+        }
+      ]
+    },
+    {
+      "Route": "index.agygo3h3lz.html.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\ulbm49jsu7-agygo3h3lz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agygo3h3lz"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\ulbm49jsu7-agygo3h3lz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001187648456"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-auYevhde3ihoaAgdQ1+SAXUbNGBvl152E7Z1ohlR+os="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\ulbm49jsu7-agygo3h3lz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8noITutkCMgLBp+h8AECpI0piZdx1s0BMz5pMSiYr5o="
+        }
+      ]
+    },
+    {
+      "Route": "script.js",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\w7wzdy3gl7-lfidwjtckr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000783085356"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY="
+        }
+      ]
+    },
+    {
+      "Route": "script.js",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY="
+        }
+      ]
+    },
+    {
+      "Route": "script.js.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\w7wzdy3gl7-lfidwjtckr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc="
+        }
+      ]
+    },
+    {
+      "Route": "script.lfidwjtckr.js",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\w7wzdy3gl7-lfidwjtckr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000783085356"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lfidwjtckr"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY="
+        }
+      ]
+    },
+    {
+      "Route": "script.lfidwjtckr.js",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lfidwjtckr"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kboHmzp7WW1wsTiM68px3YBmHH9qMTj0A8IfpKf0sVY="
+        }
+      ]
+    },
+    {
+      "Route": "script.lfidwjtckr.js.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\w7wzdy3gl7-lfidwjtckr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lfidwjtckr"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qTuwIbBq3OKeJhq95Jo53Yz/dBBAYxJXYGUJN8AeOAc="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\juvlydb7r7-l1696co1lu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001362397820"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\juvlydb7r7-l1696co1lu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70="
+        }
+      ]
+    },
+    {
+      "Route": "styles.l1696co1lu.css",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\juvlydb7r7-l1696co1lu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001362397820"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1696co1lu"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY="
+        }
+      ]
+    },
+    {
+      "Route": "styles.l1696co1lu.css",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\wwwroot\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1696co1lu"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J0PrGVkazz/JxLwxSVCrgc25cqvNejG16kU4TO/knJY="
+        }
+      ]
+    },
+    {
+      "Route": "styles.l1696co1lu.css.gz",
+      "AssetFile": "C:\\Users\\bilal.q\\TaskManagementSystem\\TaskManagmentSystem\\obj\\Debug\\net9.0\\compressed\\juvlydb7r7-l1696co1lu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 08:13:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1696co1lu"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOWwLHqceF4f84e8viy/XHBIA2xTlhmaJoLD6KQuI70="
+        }
+      ]
+    }
+  ]
+}
