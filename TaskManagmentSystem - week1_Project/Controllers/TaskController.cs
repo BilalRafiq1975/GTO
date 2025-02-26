@@ -7,7 +7,7 @@ using TaskManagementSystem.Services;
 namespace TaskManagementSystem.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-[Authorize] // Requires JWT token
+[Authorize]
 public class TaskController : ControllerBase
 {
     private readonly ITaskService _taskService;
@@ -28,5 +28,36 @@ public class TaskController : ControllerBase
         var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
         var task = _taskService.CreateTask(userId, taskDto);
         return Ok(task);
+    }
+
+    [HttpPut("{taskId}")]
+    public IActionResult UpdateTask(int taskId, [FromBody] TaskDto taskDto)
+    {
+        try
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            taskDto.Id = taskId; // Ensure the ID matches the URL
+            var updatedTask = _taskService.UpdateTask(userId, taskDto);
+            return Ok(updatedTask);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{taskId}")]
+    public IActionResult DeleteTask(int taskId)
+    {
+        try
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            _taskService.DeleteTask(userId, taskId);
+            return Ok("Task deleted successfully");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 }

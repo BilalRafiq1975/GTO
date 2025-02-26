@@ -12,4 +12,17 @@ public class TaskRepository : ITaskRepository
         _context.Tasks.Add(task);
         _context.SaveChanges();
     }
+
+    public void Update(TaskMangmentSystem.Models.Task task){
+        _context.Tasks.Update(task);
+        _context.SaveChanges();
+    }
+
+    public void Delete(int taskId){
+        var task = _context.Tasks.FirstOrDefault(t=> t.Id == taskId);
+        if (task !=null){
+            _context.Tasks.Remove(task);
+            _context.SaveChanges();
+        }
+    }
 }

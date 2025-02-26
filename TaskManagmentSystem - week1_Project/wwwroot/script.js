@@ -1,10 +1,11 @@
 let token = null;
+let editingTaskId = null;
 
 function showMessage(msg, type = 'error') {
     const message = document.getElementById('message');
     message.textContent = msg;
     message.className = `message ${type}`;
-    setTimeout(() => message.className = 'message', 3000); // Hide after 3s
+    setTimeout(() => message.className = 'message', 3000);
 }
 
 function showSignup() {
@@ -132,12 +133,91 @@ async function loadTasks() {
                 const li = document.createElement('li');
                 li.innerHTML = `
                     <span>${task.title} - ${task.description || 'No description'} (Due: ${new Date(task.dueDate).toLocaleDateString()})</span>
+                    <div class="task-actions">
+                        <button class="edit-btn" onclick="editTask(${task.id}, '${task.title}', '${task.description || ''}', '${task.dueDate.split('T')[0]}')"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn" onclick="deleteTask(${task.id})"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
                 `;
                 taskList.appendChild(li);
             });
         }
     } catch (error) {
         showMessage('Error loading tasks: ' + error.message);
+    }
+}
+
+function editTask(taskId, title, description, dueDate) {
+    editingTaskId = taskId;
+    document.getElementById('edit-task-id').value = taskId;
+    document.getElementById('edit-task-title').value = title;
+    document.getElementById('edit-task-desc').value = description;
+    document.getElementById('edit-task-due').value = dueDate;
+    document.getElementById('edit-form').style.display = 'block';
+    document.getElementById('task-form').style.display = 'none';
+}
+
+async function updateTask() {
+    const taskId = document.getElementById('edit-task-id').value;
+    const title = document.getElementById('edit-task-title').value;
+    const desc = document.getElementById('edit-task-desc').value;
+    const due = document.getElementById('edit-task-due').value;
+    const updateBtn = document.getElementById('update-task-btn');
+
+    updateBtn.disabled = true;
+    updateBtn.textContent = 'Saving...';
+
+    try {
+        const response = await fetch(`/api/task/${taskId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ id: taskId, title, description: desc, dueDate: due + 'T00:00:00' })
+        });
+        if (response.ok) {
+            showMessage('Task updated successfully!', 'success');
+            loadTasks();
+            cancelEdit();
+        } else {
+            showMessage('Failed to update task');
+        }
+    } catch (error) {
+        showMessage('Error: ' + error.message);
+    } finally {
+        updateBtn.disabled = false;
+        updateBtn.innerHTML = '<i class="fas fa-save"></i> Save';
+    }
+}
+
+function cancelEdit() {
+    editingTaskId = null;
+    const editForm = document.getElementById('edit-form');
+    const taskForm = document.getElementById('task-form');
+
+    if (!editForm) console.error("Edit form not found!");
+    if (!taskForm) console.error("Task form not found!");
+
+    if (editForm) editForm.style.display = 'none';
+    if (taskForm) taskForm.style.display = 'block';
+}
+
+async function deleteTask(taskId) {
+    if (!confirm('Are you sure you want to delete this task?')) return;
+
+    try {
+        const response = await fetch(`/api/task/${taskId}`, {
+            method: 'DELETE',
+            headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (response.ok) {
+            showMessage('Task deleted successfully!', 'success');
+            loadTasks();
+        } else {
+            showMessage('Failed to delete task');
+        }
+    } catch (error) {
+        showMessage('Error: ' + error.message);
     }
 }
 
