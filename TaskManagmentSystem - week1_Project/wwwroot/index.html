@@ -44,6 +44,15 @@
                 <input type="date" id="task-due" required>
                 <button onclick="addTask()" id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
             </div>
+            <!-- Edit Form (Hidden by Default) -->
+            <div class="task-form" id="edit-form" style="display: none;">
+                <input type="hidden" id="edit-task-id">
+                <input type="text" id="edit-task-title" placeholder="Task Title" required>
+                <input type="text" id="edit-task-desc" placeholder="Description (optional)">
+                <input type="date" id="edit-task-due" required>
+                <button onclick="updateTask()" id="update-task-btn"><i class="fas fa-save"></i> Save</button>
+                <button onclick="cancelEdit()" id="cancel-edit-btn"><i class="fas fa-times"></i> Cancel</button>
+            </div>
             <div class="task-list">
                 <h3>Task List</h3>
                 <ul id="task-list"></ul>
