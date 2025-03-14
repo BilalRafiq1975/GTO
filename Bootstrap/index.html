@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Page</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4e73df',
+                        secondary: '#1cc88a',
+                        dark: '#5a5c69',
+                        light: '#f8f9fc'
+                    },
+                    maxWidth: {
+                        '8xl': '88rem',
+                        '9xl': '96rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Section -->
+    <header class="relative">
+        <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <a href="#" class="flex items-center">
+                        <img src="https://www.dplit.com/wp-content/uploads/2022/03/dpl-logo-email.png" alt="Logo" class="h-10">
+                    </a>
+                    <!-- Mobile menu button -->
+                    <button class="lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                    <!-- Desktop menu -->
+                    <div class="hidden lg:flex items-center space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Home</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">About</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Services</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Portfolio</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+                        <div class="flex space-x-4 ml-4">
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile menu -->
+                <div class="hidden lg:hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <a href="#" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                        <a href="#" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                        <a href="#" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                        <a href="#" class="block px-3 py-2 text-gray-700 hover:text-primary">Portfolio</a>
+                        <a href="#" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                        <div class="flex space-x-4 px-3 py-2">
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="relative h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1920x1080/?business');">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-5xl font-bold mb-6">Welcome to Our Website</h1>
+                    <p class="text-xl mb-8">This is a simple Tailwind page.</p>
+                    <div class="space-x-4">
+                        <button class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition duration-300">Get Started</button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition duration-300">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Section -->
+    <main class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="mb-20">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-semibold text-center mb-8 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-primary">The Journey of Discovery</h2>
+                    <div class="space-y-6 text-gray-700">
+                        <p class="text-lg leading-relaxed">
+                            <span class="text-5xl font-bold text-primary float-left mr-2 leading-none">I</span>
+                            n the vast landscape of human experience, we often find ourselves searching for meaning and purpose. The journey of discovery is not merely about finding answers, but about embracing the questions that shape our understanding of the world.
+                        </p>
+                        <p class="text-lg leading-relaxed">Every day presents new opportunities to learn, grow, and connect with others. Whether through shared experiences or solitary reflection, we continuously evolve and adapt to the changing circumstances of life.</p>
+                        <p class="text-lg leading-relaxed">Innovation emerges from curiosity—the willingness to explore beyond the boundaries of what is known. By challenging conventional wisdom and pursuing creative solutions, we can address complex problems and create positive change in our communities.</p>
+                        <p class="text-lg leading-relaxed">The path forward may not always be clear, but with determination and resilience, we can navigate the uncertainties of tomorrow. Each step, no matter how small, contributes to the greater journey of personal and collective progress.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Inspiration</h3>
+                    <p class="text-gray-600">Finding inspiration in everyday moments can transform our perspective and ignite creativity. Look around—beauty exists in the simplest things.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Connection</h3>
+                    <p class="text-gray-600">Human connection forms the foundation of meaningful experiences. Through empathy and understanding, we build bridges across differences.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Growth</h3>
+                    <p class="text-gray-600">Personal growth happens when we embrace challenges and step outside our comfort zones. Each obstacle presents an opportunity to learn.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-50 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div>
+                    <h5 class="text-xl font-semibold text-dark mb-4 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-primary">About Us</h5>
+                    <p class="text-gray-600">We are dedicated to providing high-quality content and services to our users. Our mission is to inspire, connect, and foster growth in our community.</p>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold text-dark mb-4 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-primary">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition duration-300">Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition duration-300">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold text-dark mb-4 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-primary">Connect With Us</h5>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-600 mb-4">Subscribe to our newsletter for updates</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:border-primary">
+                        <button class="bg-primary text-white px-6 py-2 rounded-r-lg hover:bg-primary/90 transition duration-300">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-200">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-600">&copy; 2025 DPL. All rights reserved.</p>
+                <p class="text-gray-600">Terms of Service | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,135 @@
+/* Custom styles to enhance the Bootstrap template */
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #8B0000 !important; /* Dark red */
+}
+
+.top-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation styles */
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FF4500 !important; /* Orangish red */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FF4500 !important; /* Orangish red */
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: #FF4500;
+}
+
+/* Card styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-top: 3px solid #8B0000; /* Dark red border top */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(139, 0, 0, 0.2);
+}
+
+/* Button styles */
+.btn {
+    border-radius: 4px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #8B0000; /* Dark red */
+    border-color: #8B0000;
+}
+
+.btn-primary:hover {
+    background-color: #FF4500; /* Orangish red */
+    border-color: #FF4500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
+}
+
+/* Form styles */
+.form-control {
+    border-radius: 4px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(139, 0, 0, 0.25);
+    border-color: #8B0000;
+}
+
+/* Section styles */
+.bg-light {
+    background-color: #FFF5F5 !important; /* Very light red */
+}
+
+/* Footer styles */
+footer {
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    background-color: #8B0000 !important; /* Dark red */
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF4500 !important; /* Orangish red */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link.active:after {
+        display: none;
+    }
+} 
